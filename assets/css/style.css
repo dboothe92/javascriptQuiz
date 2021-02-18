@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: light;
+    font-size: 1.3vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 7vh;
+}
+
+.challenge {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vh;
+}
+
+.challenge h1 {
+    margin: 7vh 0 3vh 0;
+    font-size: 6vh;
+}
+
+.challenge button {
+    margin-top: 5vh;
+    padding: 2vh 5vh;
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
+.hide {
+    display: none;
+}

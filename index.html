@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Quiz Time!</title>
+</head>
+<body>
+    <header>
+        <h2><a href = "">View Highscore</a></h2>
+        <h2>Time Left: <span id = "timer"></span></h2>
+    </header>
+
+    <section class = "challenge">
+        <h1 id = "question-text">Coding Quiz Challenge</h1>
+
+        <div>
+            <p id = "starter-text">Try to answer all the questions within 60 seconds! Keep in mind that incorrect answers will penalize your time by 10 seconds!</p>
+            <ul id = "answer-list">
+            <!--Will gnerate buttons here-->
+            </ul>
+        </div>
+
+        <button id = "start-btn">
+            Start Quiz
+        </button>
+    </section>
+
+    <!--Linking js-->
+    <script src = "assets/js/script.js"></script>
+</body>
+</html>
