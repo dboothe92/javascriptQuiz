@@ -96,7 +96,8 @@ function startGame() {
      //checks if there are any more questions and can end the quiz.
      if (currentQuestionIndex >= questions.length) {
         alert("That's all!");
-        return;
+        clearScreen();
+        writeHighScore();
      };
      showQuestion(shuffledQuestions[currentQuestionIndex]);
  };
@@ -133,5 +134,15 @@ function resetButtons() {
     };
 };
 
+function clearScreen() {
+     document.querySelector("#main").remove();
+};
+
+function writeHighScore() {
+    let highScorePage = document.querySelector("#qAndA").appendChild(document.createElement("div"));
+    highScorePage.setAttribute("id", "main");
+    let highScorePrompt = document.createElement("h1");
+    highScorePrompt.innerHTML("<input name = 'hsPrompt'></input>", "<label name = 'hsPrompt'>BATMAN</label>")
+};
 //Starts Quiz
 startButtonEl.addEventListener('click', startGame);
